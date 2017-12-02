@@ -11,7 +11,7 @@ How it works
 
 The workflow uses AppleScript to talk to Reminders.app and a Script Filter to display the lists to the user.
 
-As talking to other applications via AppleScript is *very* slow, and Alfred runs Script Filters (more or less) every time the query changes a key, the workflow caches the reminders list for some minutes.
+As talking to other applications via AppleScript is *very* slow, and Alfred runs Script Filters (more or less) every time the query changes, the workflow caches the reminders list for some minutes.
 
 The workflow demonstrates a common idiom in workflows of working from the cached data while fetching fresh data from Reminders.app in the background. It uses Alfred 3's `rerun` feature to refresh the results as soon as the new data has been fetched from Reminders.app.
 
